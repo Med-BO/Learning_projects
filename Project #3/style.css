@@ -24,6 +24,7 @@ p {
   font-size: 1.2em;
   margin: 0;
   text-align: center;
+  margin-bottom: 1.4%;
 }
 
 textarea {
@@ -36,10 +37,12 @@ textarea:hover {
   box-shadow: 0 0 8px 4px white;
 }
 
+
 #choices-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   width: 28%;
   height: auto;
   //background-color: red;
