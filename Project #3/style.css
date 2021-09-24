@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* This body styling basically positions all of the content to the center of the page using flex */
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #34abeb;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 1.2em;
+  margin: 0;
+  text-align: center;
+}
+
+textarea {
+  margin: 0.5% 0;
+  font-family: "roboto";
+  width: 28%;
+}
+
+textarea:hover {
+  box-shadow: 0 0 8px 4px white;
+}
+
+#choices-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 28%;
+  height: auto;
+  //background-color: red;
+  column-gap: 4%;
+}
+
+#choices-container p {
+  background-color: white;
+  padding: 2%;
+  margin-bottom: 1.5%;
+  border-radius: 10px;
+  color: #34abeb;
+  transition: all 0.2s ease-in-out;
+}
