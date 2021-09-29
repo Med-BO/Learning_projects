@@ -29,7 +29,7 @@
               <h1>Activities</h1>
             </div>
             <div class="full-btn">
-              <a class="land-in-link" href="#deps"><img src="button2.png" alt=""></a>
+              <a class="land-in-link" href="#deps-a"><img src="button2.png" alt=""></a>
               <hr>
               <h1>Departments</h1>
             </div>
@@ -84,29 +84,28 @@
         </div>
       </div><!--End of activities-->
 
-    <!--start of values-->
-      <div class="values-container" id="deps">
-        <h1>Our departments</h1>
-        <div class="values">
-          <div class="value-1">
-            <h1>Value 1</h1>
-            <p class="value">description value 1 is simply dummy text of the printing and typesetting</p>
+    <!--start of deps-->
+      <div class="deps-container">
+        <h1 id="deps-a">Our departments</h1>
+        <div class="deps">
+          <div class="dep dep-com">
+            <img src="com.png" alt="">
+            <h2>Communication & Design</h2>
           </div>
-          <div class="value-2">
-            <h1>Value 2</h1>
-            <p class="value">description value 2 is simply dummy text of the printing and typesetting</p>
+          <div class="dep dep-pro">
+            <img src="project.png" alt="">
+            <h2>Project</h2>
           </div>
-          <hr id="hr-values">
-          <div class="value-3">
-            <h1>Value 3</h1>
-            <p class="value">description value 3 is simply dummy text of the printing and typesetting</p>
+          <div class="dep dep-event">
+            <img src="event.png" alt="">
+            <h2>Event</h2>
           </div>
-          <div class="value-4">
-            <h1>Value 4</h1>
-            <p class="value">description value 4 is simply dummy text of the printing and typesetting</p>
+          <div class="dep dep-spons">
+            <img src="spons.png" alt="">
+            <h2>Sponsoring</h2>
           </div>
-      </div>
-    </div><!--end of values container-->
+        </div>
+    </div><!--end of deps container-->
   <div class="events-container" id="events"><!--events container-->
     <h1>Our events</h1>
     <div class="event">
@@ -145,5 +144,24 @@
         <button type="button" id="news-btn">Subscribe</button>
       </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 600, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
   </body>
 </html>
