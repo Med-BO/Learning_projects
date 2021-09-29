@@ -1,4 +1,5 @@
 body {
+  transform: scale(1.01);
   font-family: 'Roboto';
   font-size: 1em;
   font-weight: 400;
@@ -14,6 +15,11 @@ p, h1, h2, h3, h4 {
   margin: 1%;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /*------------banner-----------*/
 
 .banner {
@@ -26,10 +32,12 @@ p, h1, h2, h3, h4 {
   center-content: end;
   align-items: center;
   z-index: 2;
-  box-shadow: 0 1px 4px 0px #515356;
+  box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.75);
 }
 
 .menu-item {
+  color: white;
+  font-weight: 600;
   text-align: center;
   height: 100%;
   cursor: pointer;
@@ -40,7 +48,7 @@ p, h1, h2, h3, h4 {
 }
 
 .menu-item:hover {
-  background-color: #515356;
+  background-color: #C88A12;
 }
 
 .logo {
@@ -65,12 +73,6 @@ p, h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto ;
-  grid-row-gap: 5%;
-  margin-bottom: 20%;
-}
-
-h/r {
-  margin: 5%;
 }
 
 /*------------End_main-----------*/
@@ -132,22 +134,30 @@ h/r {
 
 /*------------End_land_in-----------*/
 
-/*------------services-----------*/
-.services {
+/*------------activities-----------*/
+.activities {
   //background-color: green;
   padding-top: 2%;
   height: 50%;
   display: grid;
-  grid-template-columns: 22% 22% 22%;
-  grid-template-rows: auto auto;
-  grid-row-gap: 15%;
+  grid-template-columns: 26% 26% 26%;
+  grid-template-rows: auto 55vh;
+  //grid-row-gap: 15%;
   justify-content: space-around;
+  margin-bottom: 5%;
 }
 
-.srv-title {
+.act-title {
+  width: 70%;
+  text-align: center;
   grid-column-start: 1;
   grid-column-end: 4;
   justify-self: center;
+}
+
+.act-title hr {
+  margin: 4%;
+  padding: 0;
 }
 
 .card-nb {
@@ -162,7 +172,7 @@ h/r {
   //margin: 2%;
   //border: 2px black solid;
   border-radius: 20px;
-  box-shadow: 0 0 8px 4px black;
+  box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
 }
 
 .card-item {
@@ -170,7 +180,7 @@ h/r {
   width : 100%;
 }
 
-.services img {
+.activities img {
   width: 100%;
   height: 100%;
   border-top-left-radius: 20px;
@@ -183,6 +193,13 @@ h/r {
   padding-top: 2%;
   //padding-bottom: 4%;
 }
+
+.description p {
+  text-align: justify;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
 /*------------End_services-----------*/
 
 /*------------values-----------*/
@@ -192,6 +209,7 @@ h/r {
   grid-template-rows: auto auto;
   justify-items: center;
   grid-row-gap: 6%;
+  margin-bottom: 5%;
 }
 
 .values {
@@ -263,13 +281,22 @@ h/r {
   color: white;
   position: absolute;
   bottom: 10%;
-  left: 25%;
+  left: 28%;
   font-weight: 500;
   text-align: center;
 }
 
 .text h1 {
   margin-bottom: 4%;
+}
+
+#text-right {
+  left: 21%;
+}
+
+.text h1 a:hover {
+  color:#ffc222;
+  text-decoration: underline;
 }
 
 /*------------End_events-----------*/
@@ -288,7 +315,6 @@ h/r {
 .logo-footer {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .logo-footer img {
