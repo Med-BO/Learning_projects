@@ -4,7 +4,7 @@ body {
   font-weight: 400;
   display: grid;
   grid-template:
-  "banner" 7%
+  "banner" 3%
   "main" auto
   "footer" auto
   / 100%;
@@ -18,13 +18,15 @@ p, h1, h2, h3, h4 {
 
 .banner {
   grid-area: banner;
-  background-color: red;
+  background-color: #fdd154;
   display: grid;
   grid-template-columns: 7% 69% 7% 7% 7% 2%;
   grid-template-rows: auto;
   grid-row-gap: 1vw;
   center-content: end;
   align-items: center;
+  z-index: 2;
+  box-shadow: 0 1px 4px 0px #515356;
 }
 
 .menu-item {
@@ -34,14 +36,15 @@ p, h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.25s ease-out;
 }
 
 .menu-item:hover {
-  background-color: #333;
+  background-color: #515356;
 }
 
 .logo {
-  background-color: blue;
+  //background-color: blue;
   align-self: center;
   height: 100%;
   display: flex;
@@ -49,21 +52,85 @@ p, h1, h2, h3, h4 {
   align-items: center;
 }
 
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
 /*------------End_banner-----------*/
 
+/*------------main-----------*/
 .main {
   grid-area: main;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto auto  ;
-  grid-row-gap: 10%;
-  justify-items: center;
-  margin-bottom: 8%;
+  grid-template-rows: auto auto auto auto ;
+  grid-row-gap: 5%;
+  margin-bottom: 20%;
 }
 
-hr {
+h/r {
   margin: 5%;
 }
+
+/*------------End_main-----------*/
+
+/*------------land_in-----------*/
+
+.land-in {
+  //background-color: red;
+  position: relative;
+}
+
+.land-in img {
+  width: 100%;
+  height: 90vh;
+}
+
+.land-in-bg {
+  height: 30vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 0.5%;
+}
+
+.land-in-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  bottom: 3.5%;
+}
+
+.land-in-content {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.land-in:hover > .land-in-content{
+  opacity: 1;
+  //transition: opacity 1s ease-in-out;
+}
+
+.land-in-link img{
+  width: 50%;
+  height: 50%;
+  margin-top: 3%;
+  margin-left: 23%;
+  margin-bottom: 4%;
+  color: white;
+}
+
+.full-btn h1 {
+ text-align: center;
+ color: white;
+}
+
+/*------------End_land_in-----------*/
 
 /*------------services-----------*/
 .services {
@@ -71,7 +138,7 @@ hr {
   padding-top: 2%;
   height: 50%;
   display: grid;
-  grid-template-columns: 24% 24% 24%;
+  grid-template-columns: 22% 22% 22%;
   grid-template-rows: auto auto;
   grid-row-gap: 15%;
   justify-content: space-around;
@@ -103,7 +170,7 @@ hr {
   width : 100%;
 }
 
-img {
+.services img {
   width: 100%;
   height: 100%;
   border-top-left-radius: 20px;
@@ -153,12 +220,65 @@ img {
 
 /*------------End_values-----------*/
 
+/*------------events-----------*/
+
+.events-container {
+  //background-color: red;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 10% 90%;
+  justify-content: space-around;
+  grid-row-gap: 5%;
+  margin-bottom: 6%; //to keep away from footer
+}
+
+.events-container h1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.event img {
+  width: 40vw;
+  height: 60vh;
+  border-radius: 15px;
+}
+
+.event {
+  position: relative;
+}
+
+.event .bg {
+  background-color: black;
+  height: 20vh;
+  width: 102%;
+  position: absolute;
+  bottom: 3%;
+  opacity: 0.6;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.text h1 {
+  margin-bottom: 4%;
+}
+
+/*------------End_events-----------*/
 
 /*------------footer-----------*/
 .footer {
   text-align: center;
   grid-area: footer;
-  background-color: steelblue;
+  background-color: #ffc222;
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: auto;
@@ -171,10 +291,9 @@ img {
   align-items: center;
 }
 
-#logo-footer {
-  width: 40%;
-  height: 80%;
-  background-color: white;
+.logo-footer img {
+  width: 50%;
+  height: 100%;
 }
 
 .newsletter {
