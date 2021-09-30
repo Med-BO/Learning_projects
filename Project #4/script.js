@@ -16,7 +16,7 @@ let dep_spons_copy = dep_spons.cloneNode(true);
 dep_com.addEventListener("mouseenter", function(){
   dep_com.innerHTML = "";
   let nc = document.createElement("p");
-  nc.textContent = "At the Communication & Design department, we manage all of the club's...";
+  nc.textContent = "At the Communication & Design department, we create and manage the club's identity through social media channels aiming to keep our fans engaged while spreading consciousness.";
   nc.style.fontWeight = "500";
   nc.style.color = "#ffc222";
   nc.style.textAlign = "justify";
@@ -33,7 +33,7 @@ dep_com.addEventListener("mouseleave", function(){
 dep_pro.addEventListener("mouseenter", function(){
   dep_pro.innerHTML = "";
   let nc = document.createElement("p");
-  nc.textContent = "At the Project department, we manage all of the club's...";
+  nc.textContent = "At the Project department, we undertake the whole process of creating a project passing through different phases. This is the department to choose to enhance your entrepreneurship skills.";
   nc.style.fontWeight = "500";
   nc.style.color = "#ffc222";
   nc.style.textAlign = "justify";
@@ -50,7 +50,7 @@ dep_pro.addEventListener("mouseleave", function(){
 dep_event.addEventListener("mouseenter", function(){
   dep_event.innerHTML = "";
   let nc = document.createElement("p");
-  nc.textContent = "At the Event department, we manage all of the club's...";
+  nc.textContent = "At the Event department, we create events w lahkika ma naarefch chniya ekher yaamlou donc bch nabka nekteb bch naabi el site wakhaw";
   nc.style.fontWeight = "500";
   nc.style.color = "#ffc222";
   nc.style.textAlign = "justify";
@@ -67,7 +67,7 @@ dep_event.addEventListener("mouseleave", function(){
 dep_spons.addEventListener("mouseenter", function(){
   dep_spons.innerHTML = "";
   let nc = document.createElement("p");
-  nc.textContent = "At the Sponsoring department, we manage all of the club's...";
+  nc.textContent = "At the Sponsoring department, we prospect potential sponsors for both our events and project implementation and learn how to negotiate.";
   nc.style.fontWeight = "500";
   nc.style.color = "#ffc222";
   nc.style.textAlign = "justify";
