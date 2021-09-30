@@ -146,7 +146,7 @@ a {
   grid-template-rows: auto 55vh;
   //grid-row-gap: 15%;
   justify-content: space-around;
-  margin-bottom: 5%;
+  margin-bottom: 26vh;
 }
 
 .act-title {
@@ -175,6 +175,11 @@ a {
   //border: 2px black solid;
   border-radius: 20px;
   box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+  transition: transform 0.2s ease;
+}
+
+.card-nb:hover {
+  transform: scale(1.1);
 }
 
 .card-item {
@@ -211,6 +216,17 @@ a {
   grid-template-columns: 100%;
   grid-template-rows: auto auto;
   justify-items: center;
+  margin-bottom: 25vh;
+}
+
+#deps-a {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 2%;
+}
+
+#deps-a h1 {
+  margin-bottom: 5%;
 }
 
 .deps {
@@ -246,67 +262,70 @@ a {
 /*------------events-----------*/
 
 .events-container {
-  //background-color: red;
   display: grid;
-  grid-template-columns: 40% 40%;
-  grid-template-rows: 10% 90%;
-  justify-content: space-around;
-  grid-row-gap: 5%;
-  margin-bottom: 6%; //to keep away from footer
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  margin-bottom: 5%; //distance from footer
 }
 
-.events-container h1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
+.events-title {
+  width: 60%;
   text-align: center;
+  justify-self: center;
+  margin-bottom: 3%;
 }
 
-.event img {
-  width: 40vw;
-  height: 60vh;
-  border-radius: 15px;
+.events-title h1 {
+  margin-bottom: 5%;
+}
+
+.events {
+  display: flex;
+  justify-content: space-around;
 }
 
 .event {
+  width: 35vw;
+  height: 55vh;
   position: relative;
+}
+
+.event img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .event .bg {
   background-color: black;
   height: 20vh;
-  width: 102%;
+  width: 100%;
   position: absolute;
-  bottom: 3%;
+  bottom: 0;
   opacity: 0.6;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
-.text {
+.event .text {
+  width: 80%;
   color: white;
   position: absolute;
-  bottom: 10%;
-  left: 28%;
+  bottom: 6vh;
+  left: 3vw;
   font-weight: 500;
   text-align: center;
 }
 
-.text h1 {
-  margin-bottom: 4%;
-}
-
-#text-right {
-  left: 21%;
-}
-
 .text h1 a:hover {
-  color:#ffc222;
+  color: #ffc222;
   text-decoration: underline;
 }
 
 /*------------End_events-----------*/
 
 /*------------footer-----------*/
+
 .footer {
   text-align: center;
   grid-area: footer;
@@ -315,28 +334,32 @@ a {
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: auto;
   justify-content: center;
-}
-
-.logo-footer {
-  display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .logo-footer img {
-  width: 50%;
-  height: 100%;
+  width: 15vw;
+  height: 18vh;
+}
+
+.newsletter button {
+  display: none;
 }
 
 .newsletter {
-  display: grid;
-  grid-template-columns: 55%;
-  grid-template-rows: 20% 20% 20%;
-  justify-items: center;
-  justify-content: center;
-  align-content: space-around;
+  position: relative;
 }
 
-#news-btn{
-  width: 50%;
+.newsletter .btn {
+  width: 1vw;
+  height: 2vh;
+  margin-left: auto; /*these two are for centering the div*/
+  margin-right: auto;
+  background-image: url("https://static.thenounproject.com/png/11587-200.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 4%;
+  left: 68%;
 }
 /*------------End_footer-----------*/
