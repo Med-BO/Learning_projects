@@ -1,0 +1,113 @@
+body {
+  transform: scale(1.01);
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 400;
+  display: grid;
+  grid-template:
+  "banner" auto
+  "main" auto
+  "footer" auto
+  / 100%;
+}
+
+/*------------banner-----------*/
+
+.banner {
+  grid-area: banner;
+  background-color: #fdd154;
+  display: grid;
+  grid-template-columns: 7% 63% 7% 7% 7% 7% 2%;
+  grid-template-rows: 100%;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.75);
+}
+
+.menu-item {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 2px 2px 2px #C88A12;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease-out;
+}
+
+.menu-item img {
+  height: 50%;
+  width: 45%;
+}
+
+.menu-item:hover {
+  background-color: #C88A12;
+}
+
+.logo img {
+  width: 120%;
+  height: 120%;
+  padding-top: 3%;
+  padding-left: 3%;
+}
+
+/*------------End_banner-----------*/
+
+/*------------main-----------*/
+.main {
+  grid-area: main;
+  height: 50vh;
+}
+
+.title{
+  font-size: 3em;
+  text-align: center;
+}
+
+.main hr {
+  width: 70%;
+}
+
+/*------------End_main-----------*/
+
+/*------------footer-----------*/
+
+.footer {
+  text-align: center;
+  grid-area: footer;
+  background-color: #ffc222;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer img {
+  width: 15vw;
+  height: 18vh;
+}
+
+.newsletter button {
+  display: none;
+}
+
+.newsletter {
+  position: relative;
+}
+
+.newsletter .btn {
+  width: 1vw;
+  height: 2vh;
+  margin-left: auto; /*these two are for centering the div*/
+  margin-right: auto;
+  background-image: url("https://static.thenounproject.com/png/11587-200.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 4%;
+  left: 68%;
+}
+/*------------End_footer-----------*/

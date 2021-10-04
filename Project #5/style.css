@@ -2,28 +2,58 @@
   font-family: 'Roboto';
 }
 
-img {
-  width: 40%;
-  height: 50vh;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bg {
-  width: 39.5vw;
-  height: 15vh;
-  opacity: 0.6;
-  background-color: black;
-  color: white;
-  position: absolute;
-  top: 36.1%;
-  left: 1;
+.space {
+  width: 32vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
 }
 
+.flex-container {
+  //background-color: red;
+  width: 50%;
+  height: 5vh;
+  display: flex;
+  flex: wrap;
+  align-items: center;
+}
 
-.text {
-  color: white;
-  position: absolute;
-  top: 34.1%;
-  left: 11.5%;
-  font-weight: 500;
+.item {
+  background-color: #FDFD97;
+  width: 2.4vw;
+  height: 4vh;
+  border-radius: 5px;
   text-align: center;
+  margin: 0.5%;
+  box-shadow: 0px 4px 0px 0px rgba(253,221,92,0.75);
+  display: flex; //hedhom 3 bch nrodou centree kima hkitlek ma tnajamch tcenter texte verticalement
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.flex-container:hover > .K { //notation hedhy ">" tkhalik tmodifi element ki taamel hover aala l parent mteeou
+  transform: translate(-50px,30px) rotateZ(-30deg);
+}
+
+.flex-container:hover > .A {
+  transform: translate(120px,60px) rotateZ(45deg);
+}
+
+.flex-container:hover > .L {
+  transform: translate(-20px,-10px); //hawka kol mara naamel rotation bch nawwa3
+}
+
+.flex-container:hover > .B {
+  transform: translate(0px,-40px);
+}
+
+.flex-container:hover > .I {
+  transform: translate(100px,30px) rotateZ(38deg);
 }
