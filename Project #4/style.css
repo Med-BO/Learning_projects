@@ -1,5 +1,4 @@
 body {
-  transform: scale(1.01);
   font-family: 'Roboto';
   font-size: 1em;
   font-weight: 400;
@@ -9,6 +8,11 @@ body {
   "main" auto
   "footer" auto
   / 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 p, h1, h2, h3, h4 {
@@ -350,7 +354,7 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 4%;
-  left: 68%;
+  bottom: 6%;
+  left: 72%;
 }
 /*------------End_footer-----------*/
