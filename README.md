@@ -1,2 +1,2 @@
 # Learning_projects
-# This repository is mainly for stocking project that I use to learn and master different programming languages
+# This repository is mainly for personal projects that I develop while learning different programming languages and frameworks
